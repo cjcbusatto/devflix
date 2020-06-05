@@ -1,5 +1,5 @@
 <p align="center">
-    <img src=".github/img/logo.png" />
+    <img src="src/assets/logo.png" width="200px" style="margin: 150px 0" />
 </p>
 
 # 🎥 Devflix
@@ -40,6 +40,13 @@ Install the dependencies:
 ```shell
 npm install
 ```
+## Architecture (Required in class)
+
+A simple representation of how some technologies are used in Devflix.
+
+<img src=".github/img/architecture.png" />
+
+The application is developed with React Native, and through axios it uses the YouTube API to display the videos and playlists that make up the app.
 
 ## 👨🏼‍💻 Author
 

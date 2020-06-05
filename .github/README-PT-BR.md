@@ -1,25 +1,25 @@
-# Nome do Produto
-> Descrição curta do que o seu projeto faz.
+<p align="center">
+    <img src="img/logo.png" />
+</p>
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+# 🎥 Devflix
+> Assista videos e playlists sobre programação no Devflix.
 
-Um a dois parágrafos falando sobre seu produto e o que ele faz.
+[![Code Size][code-size]][code-url]
+[![License][MIT-license]][MIT-url]
+[![Realese][version]][version-url]
+
+Aplicativo mobile feito com React Native para visualização de vídeos e playlists sobre programação, no formato Netflix. 
 
 🇺🇸 [Versão em inglês](../README.md)
 
-<p align="center">
-    <img src="./img/header.png"></img>
-</p>
-
 ## :dart: Objetivo
 
-Fale um pouco sobre o objetivo do seu projeto.
+O objetivo do aplicativo é disponibilizar o conteúdo de aulas e projetos sobre programação de forma mais ágil. Em apenas um click, você terá diversos conteúdos de qualidade, devidamente filtrados para estar na plataforma, estimulando o consumo desse conteúdo, e espalhando conhecimento entre a comunidade de devs.
 
 ## :black_nib: Justificativa
 
-Existe alguma justificativa do porquê você desenvolveu esse projeto?
+Projeto desenvolvido para a matéria de Desenvolvimento de Sistemas para Dispositivos Móveis do SENAI Dendezeiros (Salvador, BA).
 
 ## :construction_worker: Instalação
 
@@ -29,9 +29,17 @@ Clone o repositório:
 git clone https://github.com/gcairesdev/projeto
 ```
 
-## 👨‍🏫 Exemplo de uso
+Abra a pasta do projeto:
 
-Alguns exemplos motivadores e úteis de como seu produto pode ser usado.  Apimente isso com blocos de código e potencialmente mais capturas de tela.
+```shell
+cd devflix
+```
+
+Instale as dependências:
+
+```shell
+npm install
+```
 
 ## 👨🏼‍💻 Autor
 
@@ -57,8 +65,11 @@ Este projeto está sob a [Licença MIT](.github/LICENSE.md).
 </p>
 
 <!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[code-size]: https://img.shields.io/github/languages/code-size/gcairesdev/devflix
+[code-url]: https://github.com/gcairesdev/devflix
+
+[MIT-license]: https://img.shields.io/github/license/gcairesdev/devflix
+[MIT-url]: https://github.com/gcairesdev/devflix/blob/master/LICENSE.md
+
+[version]: https://img.shields.io/github/v/release/gcairesdev/devflix?include_prereleases
+[version-url]: https://github.com/gcairesdev/devflix

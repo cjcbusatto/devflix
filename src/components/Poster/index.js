@@ -3,10 +3,11 @@ import { Dimensions } from 'react-native';
 
 import styled from 'styled-components/native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { Feather, Ionicons } from '@expo/vector-icons'
 
 const PosterImg = styled.ImageBackground`
   width: 100%;
-  height: ${(Dimensions.get('window').height * 70) / 100}px;
+  height: ${(Dimensions.get('window').height * 36) / 100}px;
 `;
 
 const Gradient = styled(LinearGradient)`
@@ -14,19 +15,18 @@ const Gradient = styled(LinearGradient)`
 `;
 
 const PosterBottom = styled.View`
-  position: absolute;
   width: 100%;
   align-items: center;
   justify-content: center;
-  bottom: 8px;
 `;
 
 const Title = styled.Text`
-  max-width: 95%;
-  font-size: 20px;
+  max-width: 90%;
   font-weight: 700;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  line-height: 18px;
   color: #fff;
 `;
 
@@ -48,6 +48,40 @@ const Separator = styled.View`
   background-color: #fff;
   margin: 0px 8px;
   border-radius: 3px
+`;
+
+const ActionMenu = styled.View`
+  width: 90%;
+  margin-top: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Button = styled.TouchableOpacity`
+  align-items: center;
+`;
+
+const TextButton = styled.Text`
+  color: #fff;
+  font-size: 13px;
+  margin-top: 3px;
+`;
+
+const Play = styled.TouchableOpacity`
+  flex-direction: row;
+  background-color: #fff;
+  width: 142px;
+  height: 32px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+`;
+
+const TextPlayBtn = styled.Text`
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 5px;
 `;
 
 const Poster = ({url, content, title, tags}) => {
@@ -76,6 +110,20 @@ const Poster = ({url, content, title, tags}) => {
           <Separator />
           <Tag>{tags[1]}</Tag>
         </TagMenu>
+        <ActionMenu>
+          <Button>
+            <Feather name='plus' size={26} color='#fff' />
+            <TextButton>Minha lista</TextButton>
+          </Button>
+          <Play>
+            <Ionicons name='ios-play' size={26} />
+            <TextPlayBtn>Assistir</TextPlayBtn>
+          </Play>
+          <Button>
+            <Feather name='info' size={22} color='#fff' />
+            <TextButton>Saiba mais</TextButton>
+          </Button>
+        </ActionMenu>
       </PosterBottom>
     </>
   );

@@ -22,6 +22,7 @@
       "hidden": true
     },
     "androidNavigationBar": {
+        "barStyle": "light-content",
         "visible": "sticky-immersive"
     },
     "updates": {

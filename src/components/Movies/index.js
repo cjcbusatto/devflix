@@ -16,7 +16,7 @@ const MovieScroll = styled.ScrollView`
   padding-left: 10px;
 `;
 
-const MovieCard = styled.View`
+const MovieCard = styled.TouchableOpacity`
   padding-right: 9px;
 `;
 

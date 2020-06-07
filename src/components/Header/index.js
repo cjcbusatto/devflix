@@ -1,4 +1,6 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
+
 import styled from 'styled-components/native';
 
 const Container = styled.View`
@@ -14,7 +16,7 @@ const Logo = styled.Image`
   height: 35px;
 `;
 
-const Menu = styled.Text`
+const MenuText = styled.Text`
   font-size: 18px;
   color: #fff;
 `;
@@ -26,9 +28,15 @@ const Header = () => {
         source={require('../../assets/short-logo.png')}
         resizeMode='contain'
       />
-      <Menu>Playlists</Menu>
-      <Menu>Vídeos</Menu>
-      <Menu>Minha lista</Menu>
+      <TouchableOpacity>
+        <MenuText>Playlists</MenuText>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <MenuText>Vídeos</MenuText>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <MenuText>Minha lista</MenuText>
+      </TouchableOpacity>
     </Container>  
   );
 }

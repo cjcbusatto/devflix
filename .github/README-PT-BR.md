@@ -13,6 +13,10 @@ Aplicativo mobile feito com React Native para visualização de vídeos e playli
 
 🇺🇸 [Versão em inglês](../README.md)
 
+<p align="center">
+    <img src="img/app.gif"/>
+</p>
+
 ## :dart: Objetivo
 
 O objetivo do aplicativo é disponibilizar o conteúdo de aulas e projetos sobre programação de forma mais ágil. Em apenas um click, você terá diversos conteúdos de qualidade, devidamente filtrados para estar na plataforma, estimulando o consumo desse conteúdo, e espalhando conhecimento entre a comunidade de devs.
@@ -45,8 +49,9 @@ npm install
 
 Uma simples representação de como são usadas algumas tecnologias no Devflix.
 
-[a](img/architecture.png)
-<img src="img/architecture.png" />
+<p align="center">
+    <img src="img/architecture.png" />
+</p>
 
 A aplicação é desenvolvida com React Native, e através do axios utiliza-se da API do Youtube para exibir os vídeos e playlists que compõem o app.
 

@@ -13,6 +13,10 @@ Mobile application made with React Native for viewing videos and playlists about
 
 🇧🇷 [Portuguese version](./.github/README-PT-BR.md)
 
+<p align="center">
+    <img src=".github/img/app.gif"/>
+</p>
+
 ## :dart: Objective
 
 The purpose of the application is to make the content of classes and projects on programming more agile.  In just one click, you will have several quality content, properly filtered to be on the platform, encouraging the consumption of that content, and spreading knowledge among the dev community.
@@ -44,7 +48,9 @@ npm install
 
 A simple representation of how some technologies are used in Devflix.
 
-<img src=".github/img/architecture.png" />
+<p align="center">
+    <img src=".github/img/architecture.png" />
+</p>
 
 The application is developed with React Native, and through axios it uses the YouTube API to display the videos and playlists that make up the app.
 

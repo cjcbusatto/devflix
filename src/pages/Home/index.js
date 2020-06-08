@@ -1,43 +1,75 @@
 import React from 'react';
+
 import styled from 'styled-components/native';
 
 import Header from '../../components/Header';
 import Poster from '../../components/Poster';
 import Movies from '../../components/Movies';
 
+import videos from '../../services/videos.js';
+
 const Container = styled.ScrollView`
   flex: 1;
   backgroundColor: #000;
 `;
 
-const thumbs = [
-    'http://i3.ytimg.com/vi/fYR9L2ZmodM/maxresdefault.jpg',
-    'http://i3.ytimg.com/vi/UTfGq8iaSEQ/maxresdefault.jpg',
-    'http://i3.ytimg.com/vi/EhnXaybirdA/maxresdefault.jpg',
-    'http://i3.ytimg.com/vi/t0mnERa30a0/maxresdefault.jpg',
-    'http://i3.ytimg.com/vi/eAXow8r3lYY/maxresdefault.jpg'
-]
+const getRandomVideo = () => {
+  const max = Math.floor(videos.length);
+  const random = Math.floor(Math.random() * max);
+
+  return videos[random];
+}
+
+const getRandomArrayVideos = (arrayLength) => {
+  let randomArrayVideos = [];
+  
+  for (let i = 0; i < arrayLength; i++) {
+    randomArrayVideos.push(getRandomVideo());
+  }
+
+  return randomArrayVideos;
+}
+
+const getImageUrl = (id) => {
+  const imageUrl = `http://i3.ytimg.com/vi/${id}/maxresdefault.jpg`;
+  return imageUrl;
+}
+
+const getVideoUrl = (id) => {
+  const videoUrl = `https://www.youtube.com/embed/${id}`;
+  return videoUrl;
+}
+
+const randomPoster = getRandomVideo();
 
 const Home = () => {
   return (
     <Container>
       <Poster
-        url={'http://i3.ytimg.com/vi/NLcXijzqP9M/maxresdefault.jpg'}
-        title={'Desafio: 10 projetos rápidos para treinar Programação e conseguir um Emprego'}
-        tags={['JavaScript', 'I.A']}
-        content={<Header />} 
+        image={getImageUrl(randomPoster.videoId)}
+        title={randomPoster.title}
+        tags={randomPoster.tags}
+        menu={<Header />} 
       />
       <Movies 
         listName={'Recomendados'}
-        thumbs={thumbs}
+        videos={getRandomArrayVideos(7)}
       />
       <Movies 
         listName={'Em alta'}
-        thumbs={thumbs}
+        videos={getRandomArrayVideos(5)}
       />
       <Movies 
         listName={'Desenvolvimento'}
-        thumbs={thumbs}
+        videos={getRandomArrayVideos(9)}
+      />
+      <Movies 
+        listName={'Programação'}
+        videos={getRandomArrayVideos(6)}
+      />
+      <Movies 
+        listName={'Code'}
+        videos={getRandomArrayVideos(7)}
       />
     </Container>
   );

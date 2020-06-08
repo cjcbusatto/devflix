@@ -84,11 +84,11 @@ const TextPlayBtn = styled.Text`
   padding-left: 5px;
 `;
 
-const Poster = ({url, content, title, tags}) => {
+const Poster = ({image, title, tags, menu}) => {
   return (
     <>
       <PosterImg 
-        source={{uri: url}} 
+        source={{uri: image}} 
         resizeMode='stretch'
       >
         <Gradient
@@ -100,7 +100,7 @@ const Poster = ({url, content, title, tags}) => {
               'rgba(0,0,0,1)',
           ]}
         >
-          {content}
+          {menu}
         </Gradient>
       </PosterImg>
       <PosterBottom>

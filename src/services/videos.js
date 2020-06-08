@@ -15,7 +15,7 @@ const videos =
   {
     'title': 'Um Programador Pleno já deveria saber usar esse Design Pattern (tutorial linha a linha)',
     'videoId': 'arAz2Ff8s88',
-    'channel': 'CHANNEL',
+    'channel': 'Filipe Deschamps',
     'tags': ['Pleno', 'Design Pattern'],
   },
   {

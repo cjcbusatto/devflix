@@ -37,6 +37,10 @@ const getImageUrl = (id) => {
   return imageUrl;
 }
 
+const playVideo = (videoId) => {
+    alert(videoId);
+}
+
 const Movies = ({ listName, videos }) => {
   return (
     <Container>
@@ -44,7 +48,10 @@ const Movies = ({ listName, videos }) => {
       <MovieScroll horizontal>
         {videos.map((video, item) => {
           return (
-            <MovieCard key={String(item)}>
+            <MovieCard 
+                key={String(item)}
+                onPress={() => {playVideo(video.videoId)}}    
+            >
               <MovieImg 
                 source={{
                   uri: getImageUrl(video.videoId)
